@@ -18,14 +18,14 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: DotNetCoreCLI@2
+- task: restore
   inputs:
     command: 'restore'
     projects: '**/ *.TOCproj'
     restoreArguments: '--configuration $(BuildConfiguration)'
     feedsToUse: 'select'
 
-- task: DotNetCoreCLI@2        
+- task: build        
   inputs:
     command: 'build'
     projects: '**/ *.TOCproj'
