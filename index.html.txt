@@ -1,0 +1,6 @@
+<html>
+	<head> Smaple</head>
+	<body>
+		<h1> Hello world from first server </h1>
+	</body>
+</html>
